@@ -364,6 +364,8 @@ class BeautifulReport(ReportTestResult, PATH):
         self.output_report()
         text = '\n测试已全部完成, 可前往{}查询测试报告'.format(self.log_path)
         print(text)
+        function.winsouud_Beep()
+        send_email.send_email_att_beautiful_report()
     
     def output_report(self):
         """
